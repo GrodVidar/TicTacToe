@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/main.css">
+        <title>TicTacToe</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td class="cell" id="0"></id>
+                <td class="cell" id="1"></id>
+                <td class="cell" id="2"></id>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></id>
+                <td class="cell" id="4"></id>
+                <td class="cell" id="5"></id>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></id>
+                <td class="cell" id="7"></id>
+                <td class="cell" id="8"></id>
+            </tr>
+            <div class="endGame">
+                <div class="text"></div>
+                <button onClick="startGame()">Replay</button>
+            </div>
+        </table>
+        <div id="getOuter">
+            <h3>HIGHSCORE!</h3><br>
+            <div id="highScore"></div>
+        </div>
+        <div id="postOuter">
+            <div id="score"></div>
+            <h3>Send Score!</h3>
+            <form autocomplete="off" id="postForm">
+                <label for="playerName">Name: </label>
+                <input type="text" id="playerName" required placeholder="Enter Name"><br>
+                <input type="submit" onclick="postInfo()">
+            </form>
+        </div>
+        <script src="script.js"></script>
+        <script src="getter.js"></script>
+    </body>
+</html>
